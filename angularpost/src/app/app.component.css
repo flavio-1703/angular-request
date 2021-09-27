@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+.card-container {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.page-title {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    margin-top: 30px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 100px;
+}
+
+.undertitletext {
+    margin-top: -30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.button-container {
+    display: flex;
+}
+
+#user-input {
+    width: 30px;
+    
+}
+
+.modal-title {
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+
+.modal-body {
+    font-family: 'Comfortaa', cursive;
+}
+
+.read-it {
+    margin-left: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    color: darkgray;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(1.1);
+    font-size: 12px;
+    background: transparent;
+}
+
+.btn:hover {
+    background: rgb(0, 122, 255);
+    color: white;
+    border: 1px solid white;
+}
+
+
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.post-card {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 230px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    border-radius: 10px;
+    margin: 20px 20px 0px 20px;
+    word-wrap: break-word;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.post-card:hover {
+    box-shadow: rgba(0, 4, 255, 0.09) 0px 3px 12px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.title {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.content {
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: 'Comfortaa', cursive;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.auth {
+    font-family: 'Comfortaa', cursive;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-container {
+    display: flex;
+    margin-right: 40px;
+}
+
+.setuser-btn {
+    margin-right: 10px;
+}
