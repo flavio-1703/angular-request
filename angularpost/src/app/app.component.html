@@ -1,0 +1,49 @@
+<div class="app">
+  <h1 class="page-title">Post Selector</h1>
+  <p class="undertitletext">Making requests here: {{ url }}</p>
+
+  <div class="button-container">
+    <div class="set-container">
+      <button class="btn setuser-btn" (click)="setUerId(box.value)">Select User</button>
+      <input id="user-input" type="number" #box />
+    </div>
+    <button class="btn fetch-btn" (click)="getPosts()">Fetch posts</button>
+  </div>
+  
+  <div class="card-container">
+    <div *ngFor="let post of posts | async; let i = index">
+        <div class="post-card" (click)="open(content)" >
+          <h2 class="title">{{ post.title }}</h2>
+          <p class="content">{{ post.body }}</p>
+          <h1 class="read-it">
+            読んだ
+          </h1>
+
+          <ng-template #content let-modal>
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-basic-title">
+                {{ post.title }}
+              </h4>
+              <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>{{ post.body }}</p>
+            </div>
+            <div class="modal-footer">
+              <p>{{ post.id }}</p>
+            </div>
+          </ng-template>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="info">
+  <p class="auth">By Flavio</p>
+</div>
+
+
+
